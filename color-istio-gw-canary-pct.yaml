@@ -36,10 +36,10 @@ metadata:
 spec:
   host: color-service
   subsets:
-  - name: blue
+  - name: blue-sub
     labels:
       color: blue
-  - name: green
+  - name: green-sub
     labels:
       color: green
 
@@ -61,11 +61,11 @@ spec:
     route:
     - destination:
         host: color-service #Name of the service
-        subset: blue
+        subset: blue-sub
       weight: 75
     - destination:
         host: color-service #Name of the service
-        subset: green        
+        subset: green-sub        
       weight: 25
       
 
