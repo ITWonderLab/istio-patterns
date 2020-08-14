@@ -29,7 +29,7 @@ func writePage(w http.ResponseWriter, r *http.Request) {
 
 	data := PageData{
 		Title:    		"IT Wonder Lab Kubernetes Testing Container",
-		Description:    "Container reads an ENV variable COLOR and uses its value to change the background of Color field. A Cookie named color is set with one hour expiration",
+		Description:    "Container reads an ENV variable COLOR and uses its value to change the background of Color field. A Cookie named color is set with one hour expiration.",
 		Color:    os.Getenv("COLOR"),
 		HostName: hostName,
 		Request:  string(request),
